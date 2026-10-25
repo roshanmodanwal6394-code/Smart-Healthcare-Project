@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #2563eb;
+    --primary-light: #eff6ff;
+    --background: #f4f7fb;
+    --surface: #ffffff;
+    --text: #172033;
+    --muted: #718096;
+    --border: #e6ebf2;
+    --success: #059669;
+}
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+    background: var(--background);
+    color: var(--text);
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stSidebar"] {
+    background: #111827;
+    border-right: 1px solid #273449;
+}
+
+[data-testid="stSidebar"] * {
+    color: #e5e7eb;
+}
+
+[data-testid="stSidebar"] label {
+    color: #d1d5db !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    color: #d1d5db;
+}
+
+[data-testid="stSidebar"] .stRadio label {
+    padding: 5px 0;
+}
+
+.main .block-container {
+    max-width: 1500px;
+    padding: 2rem 2.5rem 3rem;
+}
+
+.hero {
+    background: linear-gradient(
+        125deg,
+        #172554 0%,
+        #1d4ed8 60%,
+        #3b82f6 100%
+    );
+    padding: 32px;
+    border-radius: 22px;
+    margin-bottom: 24px;
+    color: white;
+    box-shadow: 0 12px 32px rgba(37, 99, 235, 0.15);
+}
+
+.hero h1 {
+    color: white;
+    font-size: 31px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+}
+
+.hero p {
+    color: #dbeafe;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.section-title {
+    color: #172033;
+    font-size: 21px;
+    font-weight: 750;
+    margin: 22px 0 14px;
+}
+
+.metric-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    padding: 21px;
+    min-height: 125px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.035);
+}
+
+.metric-label {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.metric-value {
+    color: var(--text);
+    font-size: 29px;
+    font-weight: 800;
+    margin-top: 12px;
+    line-height: 1.2;
+}
+
+.metric-caption {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+div[data-testid="stDataFrame"] {
+    background: white;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.stButton > button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.stButton > button:hover {
+    background: #1d4ed8;
+    color: white;
+    border: none;
+}
+
+.stDownloadButton > button {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+div[data-baseweb="select"] > div {
+    border-radius: 10px;
+}
+
+hr {
+    border-color: var(--border);
+}
+
+.footer {
+    color: #718096;
+    font-size: 12px;
+    text-align: center;
+    padding: 25px 0 5px;
+}
+
+.small-label {
+    color: #718096;
+    font-size: 13px;
+}
+
+[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .main .block-container {
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 22px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .metric-value {
+        font-size: 24px;
+    }
+}
